@@ -7,9 +7,6 @@ namespace Stripe
 		[JsonProperty("token_type")]
 		public string TokenType { get; set; }
 
-		[JsonProperty("stripe_publishable_key")]
-		public string PublishableKey { get; set; }
-
 		[JsonProperty("scope")]
 		public string Scope { get; set; }
 
@@ -18,6 +15,9 @@ namespace Stripe
 
 		[JsonProperty("stripe_user_id")]
 		public string StripeUserId { get; set; }
+
+		[JsonProperty("stripe_publishable_key")]
+		public string StripePublishableKey { get; set; }
 
 		[JsonProperty("refresh_token")]
 		public string RefreshToken { get; set; }
